@@ -203,8 +203,10 @@ If needed, check out the [Code Push Demo App](https://github.com/Microsoft/react
 
 ### For IOS
 
-Then add the following to the  `ios/<%=your_app_name%>/Info.plist` file. You can open this in `sh open ios/<%=your_app_name%>.xcodeprog`to edit.![](http://www.electrode.io/img/electrode-ota/Info-plist.png) or using your favorite text editor. `xml <key>CodePushDeploymentKey</key><string><%=your_deployment_key%></string><key>CodePushServerURL</key><string>http://<%=your_ota_server%></string>`  
-If your OTA server is not running over HTTPS you will need to add an exception to it in the`ios/<%=your_app_name%>/Info.plist` file, or use Xcode to update the file. `xml <dict><key>NSAllowsArbitraryLoads</key><true/><key>NSExceptionDomains</key><dict><key><%=your_ota_server%></key><dict><key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key><true/></dict></dict></dict>`
+Then add the following to the  `ios/<%=your_app_name%>/Info.plist` file. You can open this in `sh open ios/<%=your_app_name%>.xcodeprog`to edit.![](http://www.electrode.io/img/electrode-ota/Info-plist.png) or using your favorite text editor. ```xml
+<key>CodePushDeploymentKey</key><string><%=your_deployment_key%></string><key>CodePushServerURL</key><string>http://<%=your_ota_server%></string>```  
+If your OTA server is not running over HTTPS you will need to add an exception to it in the`ios/<%=your_app_name%>/Info.plist` file, or use Xcode to update the file. ```xml
+<dict><key>NSAllowsArbitraryLoads</key><true/><key>NSExceptionDomains</key><dict><key><%=your_ota_server%></key><dict><key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key><true/></dict></dict></dict>```
 
 ### For Android
 
