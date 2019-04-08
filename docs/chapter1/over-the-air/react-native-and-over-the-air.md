@@ -13,7 +13,7 @@ Electrode Over the Air \(OTA\) is a Microsoft™ Code Push compatible server tha
 
 ### Running Cassandra
 
-Befor running Cassandra, we recommend that you research basic information about running and configuring Cassandra.
+Before running Cassandra, we recommend that you research basic information about running and configuring Cassandra.
 
 `sh $ curl http://apache.mirrors.hoobly.com/cassandra/3.9/apache-cassandra-3.9-bin.tar.gz | tar -xvzf - $ cd apache-cassandra-3.9/ $ ./bin/cassandra`
 
